@@ -1,0 +1,25 @@
+# Local credentials and environment values
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and generated output
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+dist/
+build/
+.next/
+coverage/
+*.log
+
+# Runtime documents and local working files
+uploads/
+private/
+storage/private/
+tmp/
+.DS_Store

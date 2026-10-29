@@ -1,0 +1,34 @@
+name: งานพัฒนา
+description: งานที่มีขอบเขตและเกณฑ์ตรวจชัดเจน
+title: "[ED-XX] "
+body:
+  - type: input
+    id: work_id
+    attributes:
+      label: รหัสงานและรอบพัฒนา
+      placeholder: ED-05 รอบ 1
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: ผลที่ต้องได้
+      description: ระบุพฤติกรรมที่ผู้ใช้จะทำได้และขอบเขตงาน
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: เกณฑ์เสร็จและวิธีตรวจ
+      description: อ้างอิงกรณี U ที่เกี่ยวข้อง พร้อมผลที่ต้องตรวจพบ
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: งานที่พึ่งพาและข้อมูลที่ต้องใช้
+  - type: textarea
+    id: evidence
+    attributes:
+      label: ผลตรวจจริงและหลักฐาน
+      description: กรอกเมื่อทำงาน ไม่ใช้ผลที่คาดหวังแทนผลทดสอบจริง
